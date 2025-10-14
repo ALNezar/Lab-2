@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Registration</title>
+    <style>
+        body {
+            font-family: "MS Sans Serif", "Microsoft Sans Serif", sans-serif;
+            background-color: #008080;
+            padding: 20px;
+            margin: 0;
+        }
+        .window {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #c0c0c0;
+            border: 2px outset #dfdfdf;
+            box-shadow: 2px 2px 0 #000;
+        }
+        .title-bar {
+            background: linear-gradient(to right, #000080, #1084d0);
+            padding: 3px 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .title-bar-text {
+            color: white;
+            font-weight: bold;
+            font-size: 11px;
+        }
+        .title-bar-controls {
+            display: flex;
+            gap: 2px;
+        }
+        .title-bar-controls button {
+            width: 16px;
+            height: 14px;
+            padding: 0;
+            font-size: 8px;
+            border: 1px outset #dfdfdf;
+            background-color: #c0c0c0;
+            font-weight: bold;
+        }
+        .window-body {
+            padding: 20px;
+            background-color: #c0c0c0;
+        }
+        h1 {
+            font-size: 18px;
+            color: #000080;
+            margin: 0 0 5px 0;
+            font-weight: bold;
+        }
+        .subtitle {
+            font-size: 11px;
+            color: #000;
+            margin-bottom: 15px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 3px;
+            color: #000;
+            font-weight: bold;
+            font-size: 11px;
+        }
+        .required {
+            color: red;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 3px;
+            border: 2px inset #dfdfdf;
+            box-sizing: border-box;
+            font-family: "MS Sans Serif", sans-serif;
+            font-size: 11px;
+            background-color: white;
+        }
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: 1px dotted #000;
+        }
+        .radio-group,
+        .checkbox-group {
+            margin-top: 5px;
+            background-color: #c0c0c0;
+            padding: 10px;
+            border: 2px groove #dfdfdf;
+        }
+        .radio-group label,
+        .checkbox-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: normal;
+            font-size: 11px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 60px;
+        }
+        .button-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            padding: 4px 15px;
+            margin: 0 5px;
+            border: 2px outset #dfdfdf;
+            background-color: #c0c0c0;
+            font-family: "MS Sans Serif", sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 1px 1px 0 #000;
+        }
+        button:active {
+            border-style: inset;
+            box-shadow: none;
+        }
+        .fieldset {
+            border: 2px groove #dfdfdf;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .legend {
+            font-weight: bold;
+            font-size: 11px;
+            background-color: #c0c0c0;
+            padding: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">Conference Registration Form - Microsoft Internet Explorer</div>
+            <div class="title-bar-controls">
+                <button>_</button>
+                <button>□</button>
+                <button>X</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <h1>Tech Conference 2025</h1>
+            <p class="subtitle">Registration Form</p>
+            
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="fullname">Full Name <span class="required">*</span></label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age <span class="required">*</span></label>
+                    <input type="number" id="age" name="age" min="18" max="99" placeholder="18-99" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="organization">Organization</label>
+                    <input type="text" id="organization" name="organization" placeholder="Your company or institution">
+                </div>
+
+                <div class="form-group">
+                    <label for="role">Role</label>
+                    <select id="role" name="role">
+                        <option value="">-- Select Your Role --</option>
+                        <option value="speaker">Speaker</option>
+                        <option value="attendee">Attendee</option>
+                        <option value="sponsor">Sponsor</option>
+                        <option value="organizer">Organizer</option>
+                    </select>
+                </div>
+
+                <div class="fieldset">
+                    <div class="legend">Session Preference</div>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="session" value="morning"> Morning Session (9:00 AM - 12:00 PM)
+                        </label>
+                        <label>
+                            <input type="radio" name="session" value="afternoon"> Afternoon Session (2:00 PM - 5:00 PM)
+                        </label>
+                        <label>
+                            <input type="radio" name="session" value="fullday"> Full Day
+                        </label>
+                    </div>
+                </div>
+
+                <div class="fieldset">
+                    <div class="legend">Workshop Topics (Select all that apply)</div>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="workshops" value="ai"> Artificial Intelligence
+                        </label>
+                        <label>
+                            <input type="checkbox" name="workshops" value="webdev"> Web Development
+                        </label>
+                        <label>
+                            <input type="checkbox" name="workshops" value="blockchain"> Blockchain Technology
+                        </label>
+                        <label>
+                            <input type="checkbox" name="workshops" value="cloud"> Cloud Computing
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="dietaryreq">Dietary Requirements</label>
+                    <textarea id="dietaryreq" name="dietaryreq" placeholder="Any dietary restrictions or preferences?"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Additional Comments</label>
+                    <textarea id="comments" name="comments" placeholder="Any questions or special requests?"></textarea>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit">Register</button>
+                    <button type="reset">Clear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

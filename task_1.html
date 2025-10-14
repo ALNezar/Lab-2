@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <style>
+        body {
+            font-family: "MS Sans Serif", "Microsoft Sans Serif", sans-serif;
+            background-color: #008080;
+            padding: 20px;
+            margin: 0;
+        }
+        .window {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #c0c0c0;
+            border: 2px outset #dfdfdf;
+            box-shadow: 2px 2px 0 #000;
+        }
+        .title-bar {
+            background: linear-gradient(to right, #000080, #1084d0);
+            padding: 3px 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .title-bar-text {
+            color: white;
+            font-weight: bold;
+            font-size: 11px;
+        }
+        .title-bar-controls {
+            display: flex;
+            gap: 2px;
+        }
+        .title-bar-controls button {
+            width: 16px;
+            height: 14px;
+            padding: 0;
+            font-size: 8px;
+            border: 1px outset #dfdfdf;
+            background-color: #c0c0c0;
+            font-weight: bold;
+        }
+        .window-body {
+            padding: 20px;
+            background-color: #c0c0c0;
+        }
+        h1 {
+            font-size: 18px;
+            color: #000080;
+            margin: 0 0 15px 0;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            border: 2px inset #dfdfdf;
+        }
+        td {
+            padding: 8px;
+            border: 1px solid #808080;
+            font-size: 11px;
+        }
+        .label {
+            background-color: #000080;
+            color: white;
+            font-weight: bold;
+            width: 30%;
+        }
+        .photo {
+            text-align: center;
+            background-color: #c0c0c0;
+        }
+        img {
+            width: 120px;
+            height: 120px;
+            border: 2px inset #dfdfdf;
+            background-color: white;
+        }
+        ul, ol {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+        a {
+            color: #0000ff;
+            text-decoration: underline;
+        }
+        a:visited {
+            color: #800080;
+        }
+    </style>
+</head>
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">Personal Information</div>
+            <div class="title-bar-controls">
+                <button>_</button>
+                <button>□</button>
+                <button>X</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <h1>Personal Information</h1>
+            
+            <table>
+                <tr>
+                    <td class="label">Name</td>
+                    <td>Abdalla Nezar Elgaili Elshiekh</td>
+                    <td class="photo" rowspan="5">
+                        <strong>Photo</strong><br><br>
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQGYD-inm7tQJg/profile-displayphoto-crop_800_800/B56ZmIkswTHQAI-/0/1758932947287?e=1763596800&v=beta&t=IG632KEuKrsnDp9tD_LVntId62Top_2UNb5K76io-p8" alt="Profile Photo">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Date of Birth</td>
+                    <td>june 19, 2005</td>
+                </tr>
+                <tr>
+                    <td class="label">Religion</td>
+                    <td>Islam</td>
+                </tr>
+                <tr>
+                    <td class="label">Race</td>
+                    <td>Afro-Arab</td>
+                </tr>
+                <tr>
+                    <td class="label">Address</td>
+                    <td>
+                        <strong>Street:</strong> Jalan Universiti 22<br>
+                        <strong>Town:</strong> parit raja<br>
+                        <strong>District:</strong> batu phata<br>
+                        <strong>State:Johor</strong> 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Contact</td>
+                    <td colspan="2">
+                        <strong>Mobile Phone:</strong> +60 177085967<br>
+                        <strong>Social Media:</strong> 
+                        <a href="https://www.linkedin.com/in/abdalla-elshiekh-49a241251/" target="_blank">@abdalla-elshiekh</a> | 
+                        <strong>github:</strong> 
+                        <a href="https://github.com/ALNezar" target="_blank">ALNezar.github.io</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Course and Institution</td>
+                    <td colspan="2">
+                       
+Bachelor of Computer Science (Software Engineering) with Honours
+<br>
+                        Faculty of Computer Science and Information Technology<br>
+                        
+Universiti Tun Hussein Onn Malaysia (UTHM)
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Programming Skills</td>
+                    <td colspan="2">
+                        <ul>
+                            <li>HTML & CSS</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C & C++</li>
+                            <li>react</li>
+                            <li>springboot</li>
+                            <li>SQL</li>
+                        </ul>   
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Hobbies</td>
+                    <td colspan="2">
+                        <ul>
+                            <li>Making youtube videos</li>
+                            <li>Ditial Art and animation</li>
+                            <li>Playing grand strategy games (hoi4, ck3 vic2)</li>
+                            <li>embbedded devlopment hobby</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">2025 Wishlist</td>
+                    <td colspan="2">
+                        <ol>
+                            <li>Master Full-Stack Web Development and embedded programming</li>
+                            <li>Contribute to Open Source Projects</li>
+                            <li>Build a Personal Portfolio Website</li>
+                            <li>Learn embbedded devlopment</li>
+                            <li>Graduate ishallah and get a job in Malaysia </li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
